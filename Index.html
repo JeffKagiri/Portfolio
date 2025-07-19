@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character set and responsive viewport -->
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Doe's Portfolio</title>
+</head>
+<body>
+    <!-- Header with navigation bar-->
+    <div align="center">
+        <header>
+            <h1> Portfolio</h1>
+            <nav>
+                <!-- Navigation links with local anchors, displayed horizontally -->
+                <ul align="center">
+                    <li><a href="#home" title="Go to Home section">Home</a></li>
+                    <li><a href="#about" title="Go to About section">About</a></li>
+                    <li><a href="#work" title="Go to Work section">Work</a></li>
+                    <li><a href="#resume" title="Go to Resume section">Resume</a></li>
+                    <li><a href="#contact" title="Go to Contact section">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <!-- Main content area -->
+    <div align="center">
+        <main>
+            <!-- Home section with welcome message -->
+            <section id="home">
+                <article>
+                    <h1 align="center">Welcome to John Doe's Portfolio</h1>
+                </article>
+            </section>
+
+            <!-- About section with profile picture and embedded YouTube video -->
+            <section id="about">
+                <article>
+                    <figure>
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="John Doe's profile picture, a man in a henley top" width="450" height="450" align="center">
+                        <figcaption>John Doe, Web Developer</figcaption>
+                    </figure>
+                    <h2 align="center">About Me</h2>
+                    <p align="center">I'm John Doe, a passionate web developer dedicated to crafting user-friendly and visually appealing websites. My journey in tech began with a fascination for how code can bring ideas to life. With a B.S. in Computer Science from Gomycode and hands-on experience from their Software Development Bootcamp, I honed my skills in HTML, CSS, JavaScript, React, and Node.js. Over the years, I've worked on diverse projects, from e-commerce platforms to personal blogs, always striving for clean, efficient code. I thrive on learning new technologies, collaborating with clients, and solving real-world problems through innovative web solutions. My goal is to create seamless digital experiences that leave a lasting impact.</p>
+                    <iframe width="600" height="338" src="https://www.youtube.com/embed/0UDqtq6SgUg?si=onQGu9Vyfsbxdx7G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen align="center"></iframe>
+                </article>
+            </section>
+
+            <!-- Work section with project table -->
+            <section id="work">
+                <article>
+                    <h2 align="center">My Work</h2>
+                    <table border="1" align="center">
+                        <tr>
+                            <th>Project</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td align="center">1</td>
+                            <td align="center">E-commerce Website - Built a responsive online store using HTML, CSS, and JavaScript. This project involved creating a dynamic shopping cart and user authentication system.</td>
+                        </tr>
+                        <tr>
+                            <td align="center">2</td>
+                            <td align="center">Personal Blog - Created a blog platform with a custom CMS using React and Node.js. The platform allows users to publish and manage content seamlessly.</td>
+                        </tr>
+                        <tr>
+                            <td align="center">3</td>
+                            <td align="center">Portfolio Website - Designed and developed this portfolio to showcase my skills. It highlights my ability to structure content effectively using HTML.</td>
+                        </tr>
+                    </table>
+                </article>
+            </section>
+
+            <!-- Resume section -->
+            <section id="resume">
+                <article>
+                    <h2 align="center">Resume</h2>
+                    <table border="1" align="center">
+                        <tr>
+                            <th>Year</th>
+                            <th>Experience</th>
+                            <th>Skills Gained</th>
+                        </tr>
+                        <tr>
+                            <td>2023 - Present</td>
+                            <td>Freelance Web Developer</td>
+                            <td>Project management, client communication, full-stack development</td>
+                        </tr>
+                        <tr>
+                            <td>2021 - 2023</td>
+                            <td>Junior Developer at Tech Corp</td>
+                            <td>Team collaboration, JavaScript, Agile methodologies</td>
+                        </tr>
+                        <tr>
+                            <td>2021</td>
+                            <td>Software Development Bootcamp, Gomycode</td>
+                            <td>HTML, CSS, JavaScript, React, Node.js</td>
+                        </tr>
+                        <tr>
+                            <td>2020</td>
+                            <td>B.S. in Computer Science, Gomycode</td>
+                            <td>Algorithms, data structures, software engineering principles</td>
+                        </tr>
+                    </table>
+                    <p align="center"><a href="resume.pdf" download>Download Full Resume</a></p>
+                </article>
+            </section>
+
+            <!-- Contact section -->
+            <section id="contact">
+                <article>
+                    <h2 align="center">Contact Me</h2>
+                    <form action="/submit" method="post" align="center">
+                        <fieldset>
+                            <legend>Contact Information</legend>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+
+                            <button type="submit">Send Message</button>
+                        </fieldset>
+                    </form>
+                </article>
+            </section>
+        </main>
+    </div>
+
+    <!-- Footer background -->
+    <div align="center">
+        <footer>
+            <p>© 2025 John Doe's Portfolio. All rights reserved.</p>
+            <p>Follow me on social media: @JohnDoeDeveloper</p>
+            <p>Contact: <a href="mailto:john.doe@example.com">john.doe@example.com</a></p>
+        </footer>
+    </div>
+</body>
+</html>
